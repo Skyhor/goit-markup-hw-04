@@ -10,11 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--black-color)
 }
-.text {
-    width: 270px;
-    height: 75px;
-    box-sizing: border-box;
-}
+
 /* =======Reset Styles========= */
 html{
     box-sizing: border-box;
@@ -22,7 +18,6 @@ html{
 *,*
 ::before,
 ::after{
-    box-sizing:inherit;
 }
 
 h1,
@@ -43,6 +38,16 @@ margin-bottom: 0;
 margin-left: 0;
 padding: unset;
 }
+img{
+    display: block;
+}
+
+.list{
+list-style: none;
+}
+ .link{
+    text-decoration: none;
+}
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -55,24 +60,13 @@ padding: unset;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-img{
-    display: block;
-}
-
-.list{
-list-style: none;
-}
- .link{
-    text-decoration: none;
-}
 /* ==========Reset Styles */
 
 /* =========Header=========== */
 .head-link{
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
-    border-top: none;
+    border-bottom: 1px solid #ECECEC;
 }
 .container {
     width: 1200px;
@@ -106,12 +100,12 @@ justify-content:space-between;
 
 .logo {
     color: var(--black-color);
-    margin-right: 92px;
 }
 .logo-white{
     color: var(--white-color);
 }
 .wrapper{
+    margin-left: 93px;
     display: flex;
 }
 .header-link:not(:last-child){
@@ -133,6 +127,9 @@ justify-content:space-between;
 .wrapper-adres{
     display: flex;
 }
+.header-contact-adres:not(:last-child) {
+    margin-right: 50px;
+}
 
 .header-contact{
         font-weight: 500;
@@ -141,10 +138,6 @@ justify-content:space-between;
         letter-spacing: 0.02em;
         color: var(--contact-color)
         
-}
-.header-contact{
-    margin-left: 50px;
-
 }
 
 .header-contact:hover,
@@ -174,12 +167,12 @@ justify-content:space-between;
 /* =========Hero=========== */
 
 .hero{
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #2F303A;
 }
 
 .hero-title{
-   padding: 200px 232px 30px 225px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -188,6 +181,11 @@ justify-content:space-between;
         text-transform: uppercase;
         color: var(--white-color);
         
+}
+.hero-title{
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-button{
     min-width: 200px;
@@ -207,6 +205,7 @@ justify-content:space-between;
     border-radius: 4px;
 }
 .hero-button{
+    margin: 30px 0;
 margin-left: auto;
 margin-right: auto;
 }
@@ -218,9 +217,9 @@ margin-right: auto;
 
 .advant-text{
     display: flex;
-    flex-direction: row;
-padding-top: 94px;
-padding-bottom: 94px;
+}
+.section{
+    padding: 94px 0;
 }
 
 .hero-text:not(:last-child){
@@ -248,9 +247,8 @@ padding-bottom: 94px;
 /* ===========Hero */
 /* ==========Hero2========= */
 .portfolio-filter{
+    justify-content: center;
     display: flex;
-    margin-left: 280px;
-    margin-top: 94px;
     
 }
 .portfolio-button:not(:last-child){
@@ -271,37 +269,56 @@ padding-bottom: 94px;
 }
 
 .portfolio-content {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     
 }
-.portfolio-header-photo{
-    border: 0.5px solid #EEEEEE;
-}
+
 .portfolio-header-photo:not(:nth-child(3n)){
-    margin-right: 27px;
+    margin-right: 30px;
 }
 
 .portfolio-header-photo:not(:nth-last-child(-n+3)){
     margin-bottom: 30px;
 } 
-.portfolio-header-photo:nth-last-child(-n+3){
-    margin-bottom:94px;
-}
 .portfolio-card{
     background-color: #FFFFFF;
 }
+.portfolio-card{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+}
+.content-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.content-title {
+    margin-bottom: 4px;
+}
+
+.content-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--contact-color)
+}
 /* =========Hero2 */
 /* =========About us========= */
-
+.about-us-section{
+    padding-top: 0;
+}
 .about-us-title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom:50px;
 }
 .about-us{
     flex-basis: calc((100% - 90px)/ 3);
@@ -310,31 +327,24 @@ padding-bottom: 94px;
     flex-wrap: wrap;
 
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 94px;
 }
-.about-us-photo{
-    display: flex;
-flex-direction: row;
-}
+
 /* =========About-us */
 /* ========Our-team========== */
 .team{
     background-color: #F5F4FA;
 }
 .team-title{
-   padding-top: 94px;
-   padding-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom: 50px;
 }
 .team-list{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 }
 .team-photo:not(:nth-child(4n)){
     margin-right: 30px;
@@ -355,7 +365,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 .team-card {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     border-top: none;
     background-color: var(--white-color);
 }
@@ -367,43 +377,19 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         color: var(--contact-color)
 }
 /* =========Our Team */
-/* ===========Main-2========= */
-.content-title{
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        
-}
-.content-title{
-    margin: 20px 24px 4px 24px;
-}
-
-.content-text{
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.03em;
-        color: var(--contact-color)
-}
-.content-text{
-    margin: 4px 24px 20px 24px;
-}
-
-/* =============Main-2 */
 /* =======Footer======== */
 .footer{
-    height: 252px;
-            background: #2F303A;
+    padding: 60px 0;
+    background: #2F303A;
         
 }
-.footer-logo{
-    padding-top: 60px;
-}
+
 .footer-link:not(:last-child){
-padding-bottom:9px;
+margin-bottom:9px;
 }    
 .footer-adres-link{
-    padding-top: 20px;
+    margin-top: 20px;
+    font-style: normal
 }
 .footer-adres{
     font-style: normal;
