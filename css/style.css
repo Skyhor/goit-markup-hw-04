@@ -402,28 +402,34 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 .team-card {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     border-top: none;
     background-color: var(--white-color);
 }
+/* .team-social-link{ */
+
+/* } */
 .social-link{
     cursor: pointer;
     display: flex;
     fill: #afb1b8;
-    width: 44px;
-        height: 44px;
-        background-position: 50% 50%;
-         align-items: center;
-        justify-content: center; 
-        border-radius: 50% 50%;
+justify-content: center;
 }
 .social-link:hover,
 .social-link:focus {
     fill: white;
-    background-color: #188CE8;
 }
 .social-about-us{
-    
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+}
+.social-about-us:not(:last-child){
+    margin-right: 10px;
+}
+.social-about-us:hover,
+.social-about-us:focus{
+    background-color: var(--accent-color);
 }
 
 .instagram{
@@ -433,6 +439,10 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 .twitter{
     width: 20px;
     height: 16px;
+}
+.facebok{
+    width: 44px;
+    height: 44px;
 }
 
 .about-team{
