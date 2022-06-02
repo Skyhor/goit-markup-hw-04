@@ -126,8 +126,16 @@ justify-content:space-between;
 .header-contact-adres:not(:last-child) {
     margin-right: 50px;
 }
-
+.header-contact-adres{
+    fill: var(--contact-color);
+}
+.header-contact-adres:hover,
+.header-contact-adres:focus{
+fill: var(--accent-color);
+}
 .header-contact{
+    display: flex;
+    padding: 10px 0;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -135,10 +143,21 @@ justify-content:space-between;
         color: var(--contact-color)
         
 }
-
-.header-contact:hover,
-.header-contact:focus {
-    color: var(--accent-color);}
+ .header-contact:hover,
+ .header-contact:focus {
+     color: var(--accent-color);
+ }
+    .icon-envel{
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+    }
+    .icon-tel{
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+    }
+ 
 /* =======Header */
 /* ======Header2======== */
 .portfolio-hero-button{
@@ -212,6 +231,31 @@ margin-right: auto;
 
 .advant-text{
     display: flex;
+}
+.icon-hero{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.icon-plate{
+    width: 65px;
+    height: 70px;
+}
+.icon-clock{
+    width: 70px;
+    height: 70px;
+}
+.icon-diagram{
+    width: 70px;
+    height: 54px;
+}
+.icon-astronaut{
+    width: 55px;
+    height: 61px;
 }
 .section{
     padding: 94px 0;
@@ -362,6 +406,35 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     border-top: none;
     background-color: var(--white-color);
 }
+.social-link{
+    cursor: pointer;
+    display: flex;
+    fill: #afb1b8;
+    width: 44px;
+        height: 44px;
+        background-position: 50% 50%;
+         align-items: center;
+        justify-content: center; 
+        border-radius: 50% 50%;
+}
+.social-link:hover,
+.social-link:focus {
+    fill: white;
+    background-color: #188CE8;
+}
+.social-about-us{
+    
+}
+
+.instagram{
+    width: 20px;
+    height: 20px;
+}
+.twitter{
+    width: 20px;
+    height: 16px;
+}
+
 .about-team{
         font-size: 16px;
         line-height:1.18;
