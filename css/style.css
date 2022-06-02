@@ -15,10 +15,6 @@ body {
 html{
     box-sizing: border-box;
 }
-*,*
-::before,
-::after{
-}
 
 h1,
 h2,
@@ -131,17 +127,6 @@ justify-content:space-between;
     margin-right: 50px;
 }
 
-.icon-envel{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-.tel-icon{
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-}
-
 .header-contact{
         font-weight: 500;
         font-size: 14px;
@@ -178,8 +163,7 @@ justify-content:space-between;
 /* =========Hero=========== */
 
 .hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding:200px 0px;
     background-color: #2F303A;
 }
 
@@ -320,7 +304,7 @@ margin-right: auto;
 }
 /* =========Hero2 */
 /* =========About us========= */
-.about-us-section{
+.about-us-section {
     padding-top: 0;
 }
 .about-us-title{
@@ -335,8 +319,6 @@ margin-right: auto;
     flex-basis: calc((100% - 90px)/ 3);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
     flex-wrap: wrap;
 }
 
@@ -403,7 +385,6 @@ margin-bottom:9px;
     font-style: normal
 }
 .footer-adres{
-    font-style: normal;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
