@@ -412,8 +412,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 .social-link{
     cursor: pointer;
     display: flex;
-  
-justify-content: center;
+    justify-content: center;
 }
 .social-link:hover,
 .social-link:focus {
@@ -434,7 +433,8 @@ justify-content: center;
     fill: white;
     background-color: var(--accent-color);
 }
-
+.instagram{
+}
 .about-team{
         font-size: 16px;
         line-height:1.18;
@@ -450,12 +450,30 @@ justify-content: center;
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
-    
+        box-sizing: border-box;
+         margin-bottom: 50px;
 }
+.client{
+    display: flex;
+}
+.client-list{
+    fill: #AFB1B8;
+
+}
+.client-list:not(:last-child){
+margin-right:30px;
+}
+.client-list:hover,
+.client-list:focus {
+    fill: var(--accent-color);
+}
+
 .client-logo{
+    box-sizing: content-box;
     padding: 16px 32px;
-    border: 1px solid;
+    border: 1px solid #AFB1B8;
 }
+
 
 /* =======Footer======== */
 .footer{
@@ -484,6 +502,14 @@ margin-bottom:9px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--contact-color)
+}
+.foter-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--white-color);
 }
 
 /* ============Foter */
