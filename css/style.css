@@ -409,43 +409,49 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     border-top: none;
     background-color: var(--white-color);
 }
-.team-social-link{
-    width: 206px;
-    height: 44px;
-    align-items: center;
-}
 
-
-.social-link{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-}
-.social-link:hover,
-.social-link:focus {
-    fill: white;
-}
-.social-about-us{
-    width: 44px;
-    height: 44px;
-    border-radius: 50% 50%;
-    fill: #afb1b8;
-}
-.social-about-us:not(:last-child){
-    margin-right: 10px;
-    
-}
-.social-about-us:hover,
-.social-about-us:focus{
-    fill: white;
-    background-color: var(--accent-color);
-}
 .about-team{
+    margin-bottom: 16px;
         font-size: 16px;
         line-height:1.18;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--contact-color)
+        
+}
+.team-social-link {
+    display: flex;
+    justify-content: center;
+}
+
+.social-card {
+    cursor: pointer;
+}
+
+.social-card:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: white;
+    background-color: var(--accent-color);
+}
+
+.social-about-us:hover,
+.social-about-us:focus {
+    fill: white;
+    background-color: var(--accent-color);
 }
 /* =========Our Team */
 /* =========Client */
@@ -482,18 +488,22 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
 
 /* =======Footer======== */
+.footer .container{
+    display: flex;
+}
 .footer{
     padding: 60px 0;
     background: #2F303A;
-        
 }
-
 .footer-link:not(:last-child){
 margin-bottom:9px;
 }    
+.footer-nav{
+    margin-right: 70px;
+}
 .footer-adres-link{
     margin-top: 20px;
-    font-style: normal
+    font-style: normal;
 }
 .footer-adres{
         font-size: 14px;
@@ -509,13 +519,25 @@ margin-bottom:9px;
         letter-spacing: 0.02em;
         color: var(--contact-color)
 }
+.footer-social{
+   padding-top: 12px; ;
+
+}
 .foter-title{
+    margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--white-color);
+}
+.icon-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
 }
 
 /* ============Foter */
