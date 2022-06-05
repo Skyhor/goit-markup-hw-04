@@ -127,15 +127,10 @@ justify-content:space-between;
     margin-right: 50px;
 }
 .header-contact-adres{
-    fill: var(--contact-color);
-}
-.header-contact-adres:hover,
-.header-contact-adres:focus{
-fill: var(--accent-color);
+    fill: currentColor;
 }
 .header-contact{
     display: flex;
-    padding: 10px 0;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -183,6 +178,7 @@ fill: var(--accent-color);
 
 .hero{
     padding:200px 0px;
+    max-width: 1600px;
     background-color: #C4C4C4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url(../img/Hero/Img.jpg);
@@ -422,6 +418,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 .team-social-link {
     display: flex;
     justify-content: center;
+    
 }
 
 .social-card {
@@ -448,11 +445,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     background-color: var(--accent-color);
 }
 
-.social-about-us:hover,
-.social-about-us:focus {
-    fill: white;
-    background-color: var(--accent-color);
-}
+
 /* =========Our Team */
 /* =========Client */
 .client-title{
@@ -470,20 +463,24 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 .client-section:not(:last-child){
      margin-right: 30px;
  }
-
 .client-list{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
     fill: #AFB1B8;
-
 }
 .client-list:hover,
-.client-list:focus {
-    fill: var(--accent-color);
+ .client-list:focus {
+    border-color: var(--accent-color);
 }
 
-.client-logo{
-    box-sizing: content-box;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+.client-list:hover .client-logo,
+.client-list:focus .client-logo {
+    fill: var(--accent-color);
 }
 
 
@@ -532,12 +529,30 @@ margin-bottom:9px;
         text-transform: uppercase;
         color: var(--white-color);
 }
-.icon-link{
-    width: 44px;
+.footer-social-list{
+    display: flex;
+}
+.footer-icon:not(:last-child){
+    margin-right: 10px;
+}
+.footer-icon{
+        width: 44px;
     height: 44px;
     border-radius: 50% 50%;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.icon-link{
     fill: var(--white-color);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50% 50%;
+}
+.icon-link:hover,
+.icon-link:focus{
+    background-color: var(--accent-color);
 }
 
 /* ============Foter */
