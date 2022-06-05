@@ -142,16 +142,13 @@ justify-content:space-between;
  .header-contact:focus {
      color: var(--accent-color);
  }
-    .icon-envel{
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-    }
-    .icon-tel{
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-    }
+        .icon-envel {
+            margin-right: 10px;
+        }
+    
+        .icon-tel {
+            margin-right: 10px;
+        }
  
 /* =======Header */
 /* ======Header2======== */
@@ -312,6 +309,9 @@ margin-right: auto;
     flex-wrap: wrap;
     
 }
+.portfolio-link{
+    text-decoration: none;
+}
 
 .portfolio-header-photo:not(:nth-child(3n)){
     margin-right: 30px;
@@ -332,6 +332,7 @@ margin-right: auto;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--black-color);
 
 }
 
