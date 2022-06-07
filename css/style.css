@@ -5,6 +5,7 @@
     --black-color: #212121;
     --contact-color: #757575;
     --white-color: #FFFFFF;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -108,18 +109,20 @@ justify-content:space-between;
     margin-right: 50px;
 }
 .header-nav-link{
+    position: relative;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
     color: var(--black-color)
-    
+
     
 }
 .header-nav-link:hover, 
 .header-nav-link:focus {
     color: var(--accent-color);
 }
+
 .wrapper-adres{
     display: flex;
 }
@@ -164,6 +167,9 @@ justify-content:space-between;
 }
 
 .hero-title{
+    width: 696px;
+        margin-left: auto;
+        margin-right: auto;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -173,11 +179,7 @@ justify-content:space-between;
         color: var(--white-color);
         
 }
-.hero-title{
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .hero-button{
     min-width: 200px;
     min-height: 50px;
@@ -206,10 +208,22 @@ margin-right: auto;
     background-color:#188CE8   
 }
 
+.section {
+    padding: 94px 0;
+}
+
 .advant-text{
     display: flex;
 }
-.icon-hero{
+
+.hero-text:not(:last-child) {
+    margin-right: 30px;
+}
+
+.hero-text {
+    flex-basis: calc((100% - 120px)/ 4);
+}
+.icon-hero {
     display: flex;
     width: 270px;
     height: 120px;
@@ -218,6 +232,7 @@ margin-right: auto;
     background-color: #F5F4FA;
     margin-bottom: 30px;
 }
+
 .icon-plate{
     width: 65px;
     height: 70px;
@@ -234,16 +249,7 @@ margin-right: auto;
     width: 55px;
     height: 61px;
 }
-.section{
-    padding: 94px 0;
-}
 
-.hero-text:not(:last-child){
-    margin-right: 30px;
-}
-.hero-text{
-    flex-basis: calc((100% - 120px)/ 4);
-}
 
 .main-advant{
     margin-bottom: 10px;
@@ -400,6 +406,14 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
  0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 16px;
+    border-top: none;
+    background-color: var(--white-color);
+}
+
 .team-name{
         font-weight: 500;
         font-size: 16px;
@@ -408,12 +422,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         letter-spacing: 0.03em;
         margin-bottom: 10px;
 }
-.team-card {
-    padding-top: 30px;
-    padding-bottom: 16px;
-    border-top: none;
-    background-color: var(--white-color);
-}
+
 
 .about-team{
     margin-bottom: 16px;
